@@ -14,15 +14,15 @@ class ViewController: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(width: view.frame.width/3.0 - 10, height: view.frame.height/3)
+        layout.itemSize = CGSize(width: view.frame.width/3.0 - 10, height: view.frame.height/4)
         layout.minimumLineSpacing = 10.0
-        layout.minimumInteritemSpacing = 5
+        layout.minimumInteritemSpacing = 4
         
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.showsVerticalScrollIndicator = false
-        
+        collectionView.backgroundColor = .clear
         return collectionView
     }()
     
@@ -54,7 +54,9 @@ class ViewController: UIViewController {
         
         preparaTitulo()
         preparaCollectionView()
-        preparaConstraints()
+        preparaConstraintsCollection()
+        
+        self.view.backgroundColor = UIColor(red: 0.95, green: 0.98, blue: 1, alpha: 1.0)
     }
     
     func preparaTitulo() {
@@ -86,7 +88,7 @@ class ViewController: UIViewController {
         self.view.addSubview(previsaoCollectionView)
     }
     
-    func preparaConstraints() {
+    func preparaConstraintsCollection() {
         
         NSLayoutConstraint.activate([
             previsaoCollectionView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.95),

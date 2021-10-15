@@ -15,6 +15,7 @@ class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var labelDiaSemana: UILabel!
     
+    @IBOutlet weak var viewFundo: UIView!
     
     static let idCelula = "celulaCustomizada"
 
@@ -29,5 +30,7 @@ class CollectionViewCell: UICollectionViewCell {
         labelDiaMes.text = "Dia \(previsao.diaMes)"
         
         labelDiaSemana.text = previsao.diaSemana.rawValue
+        
+        self.viewFundo.layer.cornerRadius = 10.0
     }
 }

@@ -27,13 +27,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DiaMes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDn-Fx-Akk">
-                                <rect key="frame" x="8" y="106" width="104" height="21"/>
+                                <rect key="frame" x="17" y="106" width="86.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DiaSemana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRy-er-Dsb">
-                                <rect key="frame" x="8" y="146" width="104" height="21"/>
+                                <rect key="frame" x="17" y="146" width="86.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,10 +41,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="VDn-Fx-Akk" secondAttribute="trailing" constant="8" id="FgX-eT-JnB"/>
                             <constraint firstItem="Usk-a9-Ocp" firstAttribute="centerX" secondItem="aBa-EB-5f2" secondAttribute="centerX" id="Med-jt-coA"/>
                             <constraint firstItem="qRy-er-Dsb" firstAttribute="top" secondItem="VDn-Fx-Akk" secondAttribute="bottom" constant="19" id="Nxz-Jl-9pu"/>
-                            <constraint firstItem="VDn-Fx-Akk" firstAttribute="leading" secondItem="aBa-EB-5f2" secondAttribute="leading" constant="8" id="Tit-Pu-aC3"/>
+                            <constraint firstItem="VDn-Fx-Akk" firstAttribute="centerX" secondItem="Usk-a9-Ocp" secondAttribute="centerX" id="d6H-ZL-taV"/>
                             <constraint firstItem="qRy-er-Dsb" firstAttribute="leading" secondItem="VDn-Fx-Akk" secondAttribute="leading" id="kYg-wT-Tdz"/>
                             <constraint firstItem="VDn-Fx-Akk" firstAttribute="top" secondItem="Usk-a9-Ocp" secondAttribute="bottom" constant="16" id="q7r-0w-Lct"/>
                             <constraint firstItem="Usk-a9-Ocp" firstAttribute="top" secondItem="aBa-EB-5f2" secondAttribute="top" constant="10" id="qdt-7R-MPp"/>
@@ -65,6 +64,7 @@
                 <outlet property="imagemCelula" destination="Usk-a9-Ocp" id="PHD-uA-XjC"/>
                 <outlet property="labelDiaMes" destination="VDn-Fx-Akk" id="5Ms-qW-J7R"/>
                 <outlet property="labelDiaSemana" destination="qRy-er-Dsb" id="YUz-zS-J6h"/>
+                <outlet property="viewFundo" destination="aBa-EB-5f2" id="8Jg-JA-FPw"/>
             </connections>
             <point key="canvasLocation" x="273.91304347826087" y="124.55357142857142"/>
         </collectionViewCell>
