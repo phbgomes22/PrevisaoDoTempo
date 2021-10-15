@@ -16,6 +16,11 @@
 		42A67EBB2719E5C5002A36DD /* PrevisaoDoTempoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A67EBA2719E5C5002A36DD /* PrevisaoDoTempoTests.swift */; };
 		42A67EC52719E5C5002A36DD /* PrevisaoDoTempoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A67EC42719E5C5002A36DD /* PrevisaoDoTempoUITests.swift */; };
 		42A67EC72719E5C5002A36DD /* PrevisaoDoTempoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A67EC62719E5C5002A36DD /* PrevisaoDoTempoUITestsLaunchTests.swift */; };
+		42A67ED52719E7C5002A36DD /* Previsao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A67ED42719E7C5002A36DD /* Previsao.swift */; };
+		42A67ED72719EAC0002A36DD /* Clima.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A67ED62719EAC0002A36DD /* Clima.swift */; };
+		42A67ED92719EAC7002A36DD /* DiaSemana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A67ED82719EAC7002A36DD /* DiaSemana.swift */; };
+		42A67EDD2719EAEB002A36DD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A67EDB2719EAEB002A36DD /* CollectionViewCell.swift */; };
+		42A67EDE2719EAEB002A36DD /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42A67EDC2719EAEB002A36DD /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		42A67EC02719E5C5002A36DD /* PrevisaoDoTempoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrevisaoDoTempoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A67EC42719E5C5002A36DD /* PrevisaoDoTempoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevisaoDoTempoUITests.swift; sourceTree = "<group>"; };
 		42A67EC62719E5C5002A36DD /* PrevisaoDoTempoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevisaoDoTempoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		42A67ED42719E7C5002A36DD /* Previsao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Previsao.swift; sourceTree = "<group>"; };
+		42A67ED62719EAC0002A36DD /* Clima.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clima.swift; sourceTree = "<group>"; };
+		42A67ED82719EAC7002A36DD /* DiaSemana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaSemana.swift; sourceTree = "<group>"; };
+		42A67EDB2719EAEB002A36DD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		42A67EDC2719EAEB002A36DD /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,8 @@
 		42A67EA22719E5BD002A36DD /* PrevisaoDoTempo */ = {
 			isa = PBXGroup;
 			children = (
+				42A67EDA2719EAD8002A36DD /* View */,
+				42A67ED32719E7B3002A36DD /* Modelo */,
 				42A67EA32719E5BD002A36DD /* AppDelegate.swift */,
 				42A67EA52719E5BD002A36DD /* SceneDelegate.swift */,
 				42A67EA72719E5BD002A36DD /* ViewController.swift */,
@@ -125,6 +137,25 @@
 				42A67EC62719E5C5002A36DD /* PrevisaoDoTempoUITestsLaunchTests.swift */,
 			);
 			path = PrevisaoDoTempoUITests;
+			sourceTree = "<group>";
+		};
+		42A67ED32719E7B3002A36DD /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				42A67ED42719E7C5002A36DD /* Previsao.swift */,
+				42A67ED62719EAC0002A36DD /* Clima.swift */,
+				42A67ED82719EAC7002A36DD /* DiaSemana.swift */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		42A67EDA2719EAD8002A36DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42A67EDB2719EAEB002A36DD /* CollectionViewCell.swift */,
+				42A67EDC2719EAEB002A36DD /* CollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +264,7 @@
 			files = (
 				42A67EB02719E5C4002A36DD /* LaunchScreen.storyboard in Resources */,
 				42A67EAD2719E5C4002A36DD /* Assets.xcassets in Resources */,
+				42A67EDE2719EAEB002A36DD /* CollectionViewCell.xib in Resources */,
 				42A67EAB2719E5BD002A36DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A67ED72719EAC0002A36DD /* Clima.swift in Sources */,
+				42A67ED92719EAC7002A36DD /* DiaSemana.swift in Sources */,
 				42A67EA82719E5BD002A36DD /* ViewController.swift in Sources */,
+				42A67EDD2719EAEB002A36DD /* CollectionViewCell.swift in Sources */,
 				42A67EA42719E5BD002A36DD /* AppDelegate.swift in Sources */,
+				42A67ED52719E7C5002A36DD /* Previsao.swift in Sources */,
 				42A67EA62719E5BD002A36DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
