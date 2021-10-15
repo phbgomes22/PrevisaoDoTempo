@@ -17,6 +17,8 @@ class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var viewFundo: UIView!
     
+    @IBOutlet weak var labelClima: UILabel!
+    
     static let idCelula = "celulaCustomizada"
 
     override func awakeFromNib() {
@@ -26,6 +28,8 @@ class CollectionViewCell: UICollectionViewCell {
 
     func popula(com previsao: Previsao) {
         imagemCelula.image = UIImage(named: previsao.clima.imagem)
+        
+        labelClima.text = previsao.clima.rawValue
         
         labelDiaMes.text = "Dia \(previsao.diaMes)"
         

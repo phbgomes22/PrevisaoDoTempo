@@ -26,26 +26,35 @@
                                     <constraint firstAttribute="height" constant="80" id="p1E-4d-i7Z"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DiaMes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDn-Fx-Akk">
-                                <rect key="frame" x="17" y="106" width="86.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DiaMes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDn-Fx-Akk">
+                                <rect key="frame" x="17" y="146" width="86.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DiaSemana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRy-er-Dsb">
-                                <rect key="frame" x="17" y="146" width="86.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DiaSemana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRy-er-Dsb">
+                                <rect key="frame" x="17" y="186" width="86.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clima" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0J-sJ-Wqa">
+                                <rect key="frame" x="17" y="106" width="86.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="M0J-sJ-Wqa" firstAttribute="centerX" secondItem="Usk-a9-Ocp" secondAttribute="centerX" id="Bdq-g0-aUQ"/>
+                            <constraint firstItem="M0J-sJ-Wqa" firstAttribute="leading" secondItem="VDn-Fx-Akk" secondAttribute="leading" id="BqN-3y-dtU"/>
+                            <constraint firstItem="M0J-sJ-Wqa" firstAttribute="top" secondItem="Usk-a9-Ocp" secondAttribute="bottom" constant="16" id="FZR-9Y-mhk"/>
+                            <constraint firstItem="M0J-sJ-Wqa" firstAttribute="centerX" secondItem="VDn-Fx-Akk" secondAttribute="centerX" id="JT0-u0-b94"/>
                             <constraint firstItem="Usk-a9-Ocp" firstAttribute="centerX" secondItem="aBa-EB-5f2" secondAttribute="centerX" id="Med-jt-coA"/>
                             <constraint firstItem="qRy-er-Dsb" firstAttribute="top" secondItem="VDn-Fx-Akk" secondAttribute="bottom" constant="19" id="Nxz-Jl-9pu"/>
-                            <constraint firstItem="VDn-Fx-Akk" firstAttribute="centerX" secondItem="Usk-a9-Ocp" secondAttribute="centerX" id="d6H-ZL-taV"/>
+                            <constraint firstItem="VDn-Fx-Akk" firstAttribute="top" secondItem="M0J-sJ-Wqa" secondAttribute="bottom" constant="16" id="SOm-jy-Phn"/>
                             <constraint firstItem="qRy-er-Dsb" firstAttribute="leading" secondItem="VDn-Fx-Akk" secondAttribute="leading" id="kYg-wT-Tdz"/>
-                            <constraint firstItem="VDn-Fx-Akk" firstAttribute="top" secondItem="Usk-a9-Ocp" secondAttribute="bottom" constant="16" id="q7r-0w-Lct"/>
                             <constraint firstItem="Usk-a9-Ocp" firstAttribute="top" secondItem="aBa-EB-5f2" secondAttribute="top" constant="10" id="qdt-7R-MPp"/>
                             <constraint firstItem="qRy-er-Dsb" firstAttribute="trailing" secondItem="VDn-Fx-Akk" secondAttribute="trailing" id="x77-7E-XWd"/>
                         </constraints>
@@ -62,6 +71,7 @@
             <size key="customSize" width="247" height="238"/>
             <connections>
                 <outlet property="imagemCelula" destination="Usk-a9-Ocp" id="PHD-uA-XjC"/>
+                <outlet property="labelClima" destination="M0J-sJ-Wqa" id="AVR-9T-tuw"/>
                 <outlet property="labelDiaMes" destination="VDn-Fx-Akk" id="5Ms-qW-J7R"/>
                 <outlet property="labelDiaSemana" destination="qRy-er-Dsb" id="YUz-zS-J6h"/>
                 <outlet property="viewFundo" destination="aBa-EB-5f2" id="8Jg-JA-FPw"/>
