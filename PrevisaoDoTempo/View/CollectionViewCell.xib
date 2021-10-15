@@ -52,10 +52,11 @@
                             <constraint firstItem="M0J-sJ-Wqa" firstAttribute="top" secondItem="Usk-a9-Ocp" secondAttribute="bottom" constant="16" id="FZR-9Y-mhk"/>
                             <constraint firstItem="M0J-sJ-Wqa" firstAttribute="centerX" secondItem="VDn-Fx-Akk" secondAttribute="centerX" id="JT0-u0-b94"/>
                             <constraint firstItem="Usk-a9-Ocp" firstAttribute="centerX" secondItem="aBa-EB-5f2" secondAttribute="centerX" id="Med-jt-coA"/>
-                            <constraint firstItem="qRy-er-Dsb" firstAttribute="top" secondItem="VDn-Fx-Akk" secondAttribute="bottom" constant="19" id="Nxz-Jl-9pu"/>
-                            <constraint firstItem="VDn-Fx-Akk" firstAttribute="top" secondItem="M0J-sJ-Wqa" secondAttribute="bottom" constant="16" id="SOm-jy-Phn"/>
+                            <constraint firstItem="qRy-er-Dsb" firstAttribute="top" secondItem="VDn-Fx-Akk" secondAttribute="bottom" priority="500" constant="19" id="Nxz-Jl-9pu"/>
+                            <constraint firstItem="VDn-Fx-Akk" firstAttribute="top" secondItem="M0J-sJ-Wqa" secondAttribute="bottom" priority="500" constant="16" id="SOm-jy-Phn"/>
                             <constraint firstItem="qRy-er-Dsb" firstAttribute="leading" secondItem="VDn-Fx-Akk" secondAttribute="leading" id="kYg-wT-Tdz"/>
                             <constraint firstItem="Usk-a9-Ocp" firstAttribute="top" secondItem="aBa-EB-5f2" secondAttribute="top" constant="10" id="qdt-7R-MPp"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qRy-er-Dsb" secondAttribute="bottom" constant="10" id="w02-Td-aud"/>
                             <constraint firstItem="qRy-er-Dsb" firstAttribute="trailing" secondItem="VDn-Fx-Akk" secondAttribute="trailing" id="x77-7E-XWd"/>
                         </constraints>
                     </view>

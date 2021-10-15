@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(width: view.frame.width/3.0 - 10, height: view.frame.height/4)
+        layout.itemSize = CGSize(width: view.frame.width/3.0 - 10, height: 230.0)
         layout.minimumLineSpacing = 10.0
         layout.minimumInteritemSpacing = 4
         
@@ -43,6 +43,9 @@ class ViewController: UIViewController {
         Previsao(diaMes: 11, diaSemana: .quinta, clima: .chuva),
         Previsao(diaMes: 12, diaSemana: .sexta, clima: .nublado),
         Previsao(diaMes: 13, diaSemana: .sabado, clima: .sol),
+        Previsao(diaMes: 14, diaSemana: .domingo, clima: .chuva),
+        Previsao(diaMes: 15, diaSemana: .segunda, clima: .chuva),
+        Previsao(diaMes: 16, diaSemana: .terca, clima: .sol),
     ]
     
     var idCelulaPadrao: String = "celula"
